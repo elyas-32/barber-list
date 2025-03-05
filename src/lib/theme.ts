@@ -6,7 +6,15 @@ const theme = createTheme({
     fontFamily: 'var(--font-roboto)',
   },
   components: {
+    MuiSkeleton:{
+      defaultProps:{
+        animation:"wave",
+        variant:"rectangular"
+      }
+// styleOverrides:{
 
+// },
+    },
     MuiCssBaseline: {
       styleOverrides: `
         ul,li {

@@ -1,19 +1,21 @@
 "use client"
 
 import { Tab, Tabs } from "@mui/material";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-export default function () {
+import { Dispatch, SetStateAction, useState } from "react";
+import { QueryParams } from "./Header";
+export interface Props {
+    setQueryParams: Dispatch<SetStateAction<QueryParams>>;
+}
+export default function ({ setQueryParams }: Props) {
     const [value, setValue] = useState(0);
-    const router = useRouter();
-    const values = {
+    const values: Record<number, boolean | ""> = {
         0: "",
-        1: true,
-        2: false
+        1: false,
+        2: true
     }
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
-        router.push(`&x=true`)
+        setQueryParams(qp => ({ ...qp, is_shop: values[newValue] }));
     };
 
     return <Tabs variant="fullWidth" value={value} onChange={handleChange} centered>

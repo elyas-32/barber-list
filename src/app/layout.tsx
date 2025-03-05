@@ -1,4 +1,4 @@
-import theme from "@/theme";
+import theme from "@/lib/theme";
 import {
   CssBaseline,
   StyledEngineProvider,
@@ -31,8 +31,8 @@ export default function RootLayout({
         <StyledEngineProvider injectFirst>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
             <ThemeProvider theme={theme} >
-              <CssBaseline/>
-              </ThemeProvider>
+              <CssBaseline />
+            </ThemeProvider>
           </AppRouterCacheProvider>
         </StyledEngineProvider>
         {children}
