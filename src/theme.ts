@@ -5,7 +5,19 @@ const theme = createTheme({
   typography: {
     fontFamily: 'var(--font-roboto)',
   },
-  cssVariables:true
+  components: {
+
+    MuiCssBaseline: {
+      styleOverrides: `
+        ul,li {
+          list-style:none;
+          margin:0;
+          padding:0;
+        }
+      `,
+    },
+  },
+  cssVariables: true
 });
 
 export default theme;
