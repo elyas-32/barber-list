@@ -21,7 +21,7 @@ export default async function Home({
   searchParams?: Promise<SearchParams>
 }) {
 
-  const barbers = await getBarbers(await searchParams)
+  // const barbers = await getBarbers(await searchParams)
   // const barbers = 
   return (
     <>
@@ -30,9 +30,9 @@ export default async function Home({
         <Container>
           <div className='grid grid-cols-[repeat(auto-fit,minmax(312px,1fr))] gap-1.5'>
             {
-              (barbers ?? []).map(() => {
-                return <Card />
-              })
+              // (barbers ?? []).map(() => {
+              //   return <Card />
+              // })
             }
           </div>
         </Container>
