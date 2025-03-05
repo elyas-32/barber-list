@@ -1,21 +1,3 @@
-steps to run :
-pnpm install
-pnpm start
-قابلیت فیلتر با جستجو و سرویس ها و مغازه بودن یا نبون
-debouncing رعایت شده
-shimmer effect پیاده شده
-از mui استفاده شده و رسپانسیو هست
-12 ساعت برای پروژ وقت گذاشته شده 
-2 ساعت برای یادگیری مفاهیم debouncing و abortController
-4 ساعت ui 
-و 6 ساعت هم عملکرد
-دلیل وقت گیری زیاد این بود که برخی موارد رو برای اول برخورد کرده بودم
-پیش نمایش:
-![عکس اول](1.png)
-![عکس دوم](2.png)
-البته! در زیر یک الگوی README.md به زبان فارسی برای شما آماده کرده‌ام. می‌توانید این متن را کپی کرده و در فایل README.md خود قرار دهید.
-
-
 برای اجرای پروژه به صورت محلی، مراحل زیر را دنبال کنید:
 
 bash
@@ -42,5 +24,5 @@ pnpm start
 
 در اینجا چند اسکرین‌شات از برنامه وجود دارد:
 
-![Screenshot 1](1.png)
-![Screenshot 2](2.png)
+![Screenshot 1](https://github.com/elyas-32/barber-list/blob/master/public/1.png)
+![Screenshot 2](https://github.com/elyas-32/barber-list/blob/master/public/2.png)
