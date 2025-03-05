@@ -7,7 +7,6 @@ import {
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import "../globals.css";
 import "./globals.css";
 export const metadata: Metadata = {
   title: "Barber List",
@@ -31,8 +30,8 @@ export default function RootLayout({
       >
         <StyledEngineProvider injectFirst>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-            <ThemeProvider theme={theme}>
-              <CssBaseline />
+            <ThemeProvider theme={theme} >
+              <CssBaseline/>
               </ThemeProvider>
           </AppRouterCacheProvider>
         </StyledEngineProvider>
