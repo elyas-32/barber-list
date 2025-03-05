@@ -1,8 +1,8 @@
 import { API, controllCall } from '@/lib/data';
+import { Barber } from '@/lib/definition';
 import axios from 'axios';
 import { SearchParams } from 'next/dist/server/request/search-params';
 import Card from './Card';
-import { Barber } from '@/lib/definition';
 const getBarbers = async (abortController: AbortController, searchParams?: SearchParams) => {
     const params = searchParams ? new URLSearchParams(searchParams as {}) : ""
     try {

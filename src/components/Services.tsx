@@ -6,13 +6,13 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
 import { API } from '@/lib/data';
+import { type Service, type Services } from '@/lib/definition';
 import TuneRoundedIcon from '@mui/icons-material/TuneRounded';
 import { Button, Dialog, List, Typography } from '@mui/material';
 import Chip from '@mui/material/Chip';
 import axios from 'axios';
-import { Dispatch, SetStateAction, use, useCallback, useEffect, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { QueryParams } from './Header';
-import { type Service, type Services } from '@/lib/definition';
 interface Props {
     setQueryParams: Dispatch<SetStateAction<QueryParams>>;
     queryParams: QueryParams,

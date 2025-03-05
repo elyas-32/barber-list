@@ -1,6 +1,5 @@
 "use client"
-import { debounce, TextField } from "@mui/material"
-import { useRouter } from "next/navigation"
+import { TextField } from "@mui/material";
 import { Dispatch, SetStateAction } from "react";
 import { QueryParams } from "./Header";
 export interface Props {

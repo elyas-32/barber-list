@@ -1,4 +1,4 @@
-import { Box, Skeleton } from "@mui/material"
+import { Skeleton } from "@mui/material"
 
 const CardFallBack = () => {
     return <div className="grid grid-cols-[minmax(0,100px)_1fr] gap-2 p-2 border border-[#bdbdbd] rounded-sm">

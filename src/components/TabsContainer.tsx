@@ -6,7 +6,7 @@ import { QueryParams } from "./Header";
 export interface Props {
     setQueryParams: Dispatch<SetStateAction<QueryParams>>;
 }
-export default function ({ setQueryParams }: Props) {
+export default function TabsContainer({ setQueryParams }: Props) {
     const [value, setValue] = useState(0);
     const values: Record<number, boolean | ""> = {
         0: "",
